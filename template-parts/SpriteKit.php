@@ -70,7 +70,7 @@ foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
     
    
     <hr class="separator" />   
-        <h3 style="font-size:16px;  padding-left:15px;  ">Ostatnie posty:</h3>
+        <h3 style="font-size:16px;    ">Ostatnie posty:</h3>
             <div class="row" style="margin:auto;">
             <?php 
             $args = array( 'posts_per_page' => 3, );
@@ -81,17 +81,20 @@ foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
             ?>
             
                 <div class="col-md-4" style="margin-top:10px; margin-bottom:10px;">
-                <div style="position:relative; margin:auto;" >
+                <div class="portfolio-card" style="position:relative; margin:auto;" >
                     <div class="SpriteKit-image" style="
                     background:
                     url('<?php echo get_the_post_thumbnail_url( $post = $post); ?>');
                     width:100%;
-                    height:200px;
+                    height:300px;
                     background-size: cover;
                     background-position:center;
+                    background-color:#fcfcfc;
+                    border-radius:2px;
+                    z-index:10;
                     ">
                 </div>
-		<a href="<?php the_permalink(); ?>" style="position:absolute; bottom:50%; display:block;  z-index:1000;" class="spritekit-link"><?php
+                <a href="<?php the_permalink(); ?>" class="spritekit-link"><?php
         
          
          the_title(); 

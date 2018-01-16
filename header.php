@@ -62,10 +62,11 @@
 <div class="container-fluid breadcrumb-full" style="padding-left:0; padding-right:0;"> 	
 <!-- <div class="breadcrumb"><?php get_breadcrumb(); ?><a class="rss" href="<?php echo esc_url( home_url( '/?feed=rss' ) ); ?>">RSS</a></div> -->
 </div>
+<div class="container">
 <div class="facebook-banner"><span>Lubiąc moją stronę na Facebook'u wspierasz mnie i moje dalsze projekty, jednocześnie zamiast reklam widzisz tylko ten banner :)</span>
 <div class="fb-like" data-href="https://www.facebook.com/Modrzjwzki/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
 </div>
-
+</div>
 
 
 

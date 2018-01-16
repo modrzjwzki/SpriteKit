@@ -136,7 +136,7 @@ global $post;
             ?>
             
                 <div class="col-md-4" style="margin-top:10px; margin-bottom:10px;">
-                <div class style="position:relative; margin:auto;">
+                <div class="portfolio-card" style="position:relative; margin:auto;">
                     <div style="
                     background:
     

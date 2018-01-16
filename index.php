@@ -52,7 +52,7 @@ get_header(); ?>
 
 		<div class="pagination">
 			<?php echo paginate_links(); ?> <br />
-			<div class="ad-header"></div>
+			
 		</div>
 		</main><!-- #main -->
 		

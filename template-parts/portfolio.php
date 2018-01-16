@@ -4,14 +4,22 @@
 global $post;
 ?>
 
+<style> 
+
+.zelda {
+  display:none;
+}
+
+</style>
+
 <div class="container" style="max-width:900px; padding-left:0;padding-right:0; padding-top:50px;;">
 <!-- Nav tabs -->
 <ul class="nav nav-pils nav-justified" role="tablist">
   <li class="nav-item nav-first">
-    <a class="nav-link active" data-toggle="tab" href="#Games" role="tab">Games</a>
+    <a class="nav-link " data-toggle="tab" href="#Games" role="tab">Games</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#illustrations" role="tab">Illustrations</a>
+    <a class="nav-link active" data-toggle="tab" href="#illustrations" role="tab">Illustrations</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" data-toggle="tab" href="#themes" role="tab">Themes</a>
@@ -23,7 +31,7 @@ global $post;
 
 <!-- Tab panes -->
 <div class="tab-content portfolio-tab-content">
-  <div class="tab-pane active" id="Games" role="tabpanel">
+  <div class="tab-pane " id="Games" role="tabpanel">
 <div class="row" style="margin:auto;">
             <?php 
             $args = array(
@@ -36,29 +44,29 @@ global $post;
             ?>
             
                 <div class="col-md-4" style="margin-top:10px; margin-bottom:10px;">
-                <div class style="position:relative; margin:auto;">
+                <a href="<?php the_permalink(); ?>" class="spritekit-link"><div class style="position:relative; margin:auto;">
                     <div style="
                     background:
     
                     url('<?php echo get_the_post_thumbnail_url( $post = $post); ?>');
                     width:100%;
-                    height:200px;
+                    height:300px;
                     background-size: cover;
                     background-position:center;
                     background-color:#fcfcfc;
                     border-radius:2px;
-                    z-index:1;
+                    z-index:10;
                     ">
                 </div>
-		<a href="<?php the_permalink(); ?>" class="spritekit-link"><?php
+		<?php
         
          
-         the_title(); 
-    
+      
          ?>
             
-         </a>
+         
         </div>
+        </a>
         </div>
        
 	
@@ -68,7 +76,7 @@ global $post;
 </div>
 
   </div>
-  <div class="tab-pane fade" id="illustrations" role="tabpanel">
+  <div class="tab-pane active " id="illustrations" role="tabpanel">
   
   <div class="row" style="margin:auto;">
             <?php 
@@ -82,18 +90,18 @@ global $post;
             ?>
             
                 <div class="col-md-4" style="margin-top:10px; margin-bottom:10px;">
-                <div class style="position:relative; margin:auto;">
+                <div class="portfolio-card" style="position:relative; margin:auto;">
                     <div style="
                     background:
     
                     url('<?php echo get_the_post_thumbnail_url( $post = $post); ?>');
                     width:100%;
-                    height:200px;
+                    height:300px;
                     background-size: cover;
                     background-position:center;
                     background-color:#fcfcfc;
                     border-radius:2px;
-                    z-index:1;
+                    z-index:10;
                     ">
                 </div>
 		<a href="<?php the_permalink(); ?>" class="spritekit-link"><?php
@@ -134,12 +142,12 @@ global $post;
     
                     url('<?php echo get_the_post_thumbnail_url( $post = $post); ?>');
                     width:100%;
-                    height:200px;
+                    height:300px;
                     background-size: cover;
                     background-position:center;
                     background-color:#fcfcfc;
                     border-radius:2px;
-                    z-index:1;
+                    z-index:10;
                     ">
                 </div>
 		<a href="<?php the_permalink(); ?>" class="spritekit-link"><?php
